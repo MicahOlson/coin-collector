@@ -1,6 +1,7 @@
 # Coin Collector
 #### *Co-Created By: David Couch*
 #### *Co-Created By: Micah Olson*
+#### *Co-created By: Austin Landis*
 #### *Find what coins make up your pocket change*
 * * * 
 
@@ -78,6 +79,7 @@ code .
 
 ``` bash
 gem install bundler
+
 ```
 * then type
 
@@ -117,12 +119,12 @@ rspec
 
 ## Contact Information
 _David Couch: [Email](dcouch440@gmail.com)_\
-_Micah Olson: [Email](micah.olson@protonmail.com)_  
-
+_Micah Olson: [Email](micah.olson@protonmail.com)_\
+_Austin Landis: [Email](austinlandiscode@gmail.com)_
 * * *
 
 ## License
 > [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
-> David Couch, Micah L. Olson &copy; 2021
+> David Couch, Micah L. Olson, Austin Landis &copy; 2021
 
 * * *
