@@ -1,5 +1,6 @@
 # Coin Collector
 #### *Co-Created By: David Couch*
+#### *Co-Created By: Micah Olson*
 #### *Find what coins make up your pocket change*
 * * * 
 
@@ -8,35 +9,33 @@ This is an application for learning TDD with ruby while attending Epicodus codin
 * * *
 
 ## Technologies used
-* Ruby
-* Rspec
-* pry
+* Ruby `2.6.5`
+* Rspec `3.10.0`
+* pry `0.14.0`
 * github
 * * *
 
+## Project Installation
+* Ruby `2.6.5` is *required* to run this program.  
+  * How to [install Ruby 2.6.5](https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/installing-ruby).  
 
-## Installation : 
-### Want to see this webpage now?
+* Go to ( https://github.com/dcouch440/coin-collector ).
 
-
-* Go to ( https://github.com/dcouch440/scrabble-score ).
-
-*  Navigate to the code button on the github website.
+* Navigate to the code button on the github website.
 
 * Click on the code button to open the menu.
 
 
 - Copy the HTTPS code by clicking the clipboard next to the link.
 
-- Within your Bash terminal navigate to your desired location by using cd fallowed by your desired directory.
-S
+- Within your Bash terminal navigate to your desired location by using cd followed by your desired directory.
 ```bash
  cd Desktop
 ``` 
 
 - Once you have chosen your desired directory use the command.
 ```bash 
-git clone https://github.com/dcouch440/scrabble-score.git
+git clone https://github.com/dcouch440/coin-collector.git
 ```
 
 <div 
@@ -89,21 +88,41 @@ bundle install
 ```bash
 ruby "file goes here (no quotes)"
 ```
+## Testing
+* This project was created using **test-driven development** (TDD).
 
-## Addition comments:
-* Created on 2/23/21
+* To view the test suite, open PLACEHOLDER
 
+* To run the test suite yourself and verify program functionality
+  
+```bash
+rspec
+``` 
+
+* If there is a problem in the code the testing suite will read as such :
+
+<div>
+  <img src="img/rspec-f2.PNG" alt="Failing RSpec test" width="80%">
+</div>
+
+* Follow the examples and read the English that describes what the function should do. If everything is in order you should receive back :
+<div>
+  <img src="img/rspec-p.PNG" alt="Passing RSpec test" width="80%">
+</div>
+
+## Additional comments
+* Created on 2/25/21
 
 * * *
 
 ## Contact Information
-_David Couch: [Email](dcouch440@gmail.com)_
+_David Couch: [Email](dcouch440@gmail.com)_\
+_Micah Olson: [Email](micah.olson@protonmail.com)_  
 
 * * *
 
-## License:
-> *&copy; David Couch, 2021*
-
-Licensed under [MIT license](https://mit-license.org/)
+## License
+> [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
+> David Couch, Micah L. Olson &copy; 2021
 
 * * *
