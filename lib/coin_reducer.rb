@@ -1,34 +1,21 @@
 class Coin
   def cascade(value)
+    if value.include?(".")
+      value = (value.to_f * 100).to_i
+    else
+      value = value.to_i
+    end
     quarters = value / 25
     remainder = value % 25
     dimes = remainder / 10
     remainder = remainder % 10
     nickels = remainder / 5
     pennies = remainder % 5
-    "You Have: #{plural(quarters, 'quarter')}, #{dimes} dime, #{nickels} nickel, #{pennies} penny"
+    "You Have: #{plural(quarters, 'quarter')}, #{plural(dimes, 'dime')}, #{plural(nickels, 'nickel')}, #{plural(pennies, 'penn')}"
   end
   def plural(amount, type)
-    amount > 1 ? "#{amount} #{type}s" : "#{amount} #{type}"
+    type == "penn" ? 
+      (amount > 1 ? "#{amount} #{type}ies" : "#{amount} #{type}y") :
+      (amount > 1 ? "#{amount} #{type}s" : "#{amount} #{type}")
   end
 end
-
-# start_value = input
-# remainder = (start_value % 25) / 10
-# remainder = (remainder % 10) / 5
-
-# quarters = value=>91 / 25
-# remainder = value=> % 25
-# dimes = remainder / 10
-# remainder = remainder % 10
-# nickels = remainder / 5
-# remainder = remainder % 5
-# pennies = remainder
-
-# 91 / 25 = 3
-# 91 % 25 = 16
-# 16 / 10 = 1
-# 16 % 10 = 6
-# 6 / 5 = 1
-# 6 % 5 = 1
-# 1 / 1 = 1

@@ -10,6 +10,9 @@ describe("Coin") do
     it("returns the value from the input with the smallest amount of coins needed to match the inputted value") do
       expect(@coin.cascade(91)).to(eq("You Have: 3 quarters, 1 dime, 1 nickel, 1 penny"))
     end
+    it("returns the value from the input with the smallest amount of coins needed to match the inputted value") do
+      expect(@coin.cascade(1.91)).to(eq("You Have: 7 quarters, 1 dime, 1 nickel, 1 penny"))
+    end
   end
   describe("plural") do
     it("returns the proper description of a string if the value is greater than 1") do
@@ -18,32 +21,11 @@ describe("Coin") do
     it("returns the proper description of a string if the value is greater than 1") do
       expect(@coin.plural(1, "quarter")).to(eq("1 quarter"))
     end
-    
+    it("returns the plural version of a penny") do
+      expect(@coin.plural(1, 'penn')).to(eq("1 penny"))
+    end
+    it("returns the plural version of a penny") do
+      expect(@coin.plural(2, 'penn')).to(eq("2 pennies"))
+    end
   end
 end
-
-# describe "Before and after hooks" do 
-#   before(:each) do 
-#      puts "Runs before each Example" 
-#   end 
-  
-#   after(:each) do 
-#      puts "Runs after each Example" 
-#   end 
-  
-#   before(:all) do 
-#      puts "Runs before all Examples" 
-#   end 
-  
-#   after(:all) do 
-#      puts "Runs after all Examples"
-#   end 
-  
-#   it 'is the first Example in this spec file' do 
-#      puts 'Running the first Example' 
-#   end 
-  
-#   it 'is the second Example in this spec file' do 
-#      puts 'Running the second Example' 
-#   end 
-# end
