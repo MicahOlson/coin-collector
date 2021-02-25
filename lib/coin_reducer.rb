@@ -5,12 +5,13 @@ class Coin
     dimes = remainder / 10
     remainder = remainder % 10
     nickels = remainder / 5
-    remainder = remainder % 5
-    pennies = remainder
-    "You Have: #{quarters} quarter, #{dimes} dime, #{nickels} nickel, #{pennies} penny"
+    pennies = remainder % 5
+    "You Have: #{plural(quarters, 'quarter')}, #{dimes} dime, #{nickels} nickel, #{pennies} penny"
+  end
+  def plural(amount, type)
+    amount > 1 ? "#{amount} #{type}s" : "#{amount} #{type}"
   end
 end
-
 
 # start_value = input
 # remainder = (start_value % 25) / 10
