@@ -11,6 +11,7 @@ class Coin
     pennies = remainder % 5
     "You Have: #{plural(quarters, 'quarter')}, #{plural(dimes, 'dime')}, #{plural(nickels, 'nickel')}, #{plural(pennies, 'penn')}"
   end
+
   def plural(amount, type)
     type == "penn" ? 
       (amount > 1 ? "#{amount} #{type}ies" : "#{amount} #{type}y") :
