@@ -5,10 +5,8 @@ class Coin
     else
       value = value.to_i
     end
-    quarters = value / 25
-    remainder = value % 25
-    dimes = remainder / 10
-    remainder = remainder % 10
+    quarters, remainder = value / 25, value % 25
+    dimes, remainder = remainder / 10, remainder % 10
     nickels = remainder / 5
     pennies = remainder % 5
     "You Have: #{plural(quarters, 'quarter')}, #{plural(dimes, 'dime')}, #{plural(nickels, 'nickel')}, #{plural(pennies, 'penn')}"

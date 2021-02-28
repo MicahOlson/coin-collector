@@ -8,10 +8,10 @@ describe("Coin") do
   end
   describe("cascade") do
     it("returns the value from the input with the smallest amount of coins needed to match the inputted value") do
-      expect(@coin.cascade(91)).to(eq("You Have: 3 quarters, 1 dime, 1 nickel, 1 penny"))
+      expect(@coin.cascade('91')).to(eq("You Have: 3 quarters, 1 dime, 1 nickel, 1 penny"))
     end
     it("returns the value from the input with the smallest amount of coins needed to match the inputted value") do
-      expect(@coin.cascade(1.91)).to(eq("You Have: 7 quarters, 1 dime, 1 nickel, 1 penny"))
+      expect(@coin.cascade('1.91')).to(eq("You Have: 7 quarters, 1 dime, 1 nickel, 1 penny"))
     end
   end
   describe("plural") do
